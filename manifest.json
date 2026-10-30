@@ -1,14 +1,13 @@
 {
   "manifest_version": 3,
   "name": "yt ad end",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "description": "While a YouTube ad is on screen, seeks that playback to the end of its duration.",
   "content_scripts": [
     {
       "matches": ["*://www.youtube.com/*", "*://m.youtube.com/*"],
       "js": ["content.js"],
-      "run_at": "document_start",
-      "world": "MAIN"
+      "run_at": "document_start"
     }
   ]
 }
